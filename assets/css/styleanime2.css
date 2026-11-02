@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background-color: #f3f4ed;
+}
+
+/* Header */
+header {
+  background-color: #2c5252;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Navigasi (Flexbox: Logo Kiri, Menu Kanan) */
+nav {
+  background-color: #137a87;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  display: flex;
+  color: #f1c40f;
+}
+
+/* Section Utama (CSS Grid: Article & Aside) */
+main {
+  padding: 20px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+article {
+  background-color: #d9e8e3;
+  padding: 20px;
+  border: 1px solid #9bb8ac;
+  border-radius: 5px;
+}
+
+aside {
+  background-color: #fdf8e2;
+  padding: 20px;
+  border: 1px solid #e6dbad;
+  border-radius: 5px;
+}
+
+/* Table styling di dalam artikel/aside */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1abc9c;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #7f8c8d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

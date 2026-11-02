@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e2e8f0;
+  padding: 20px;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background-color: #ffffff;
+}
+
+/* 1. Header (Warna 1) */
+header {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* 2. Navigasi Flexbox (Warna 2) */
+nav {
+  background-color: #0f766e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  display: flex;
+  color: #f1c40f;
+}
+
+/* 3. Section (CSS Grid) */
+section.main-content {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr; /* Proporsi kolom seimbang */
+  gap: 15px;
+  padding: 15px;
+  background-color: #d4e1cb; /* Warna khusus tag section */
+}
+
+/* Tag Article (Warna 3) */
+article {
+  background-color: #e0f2fe;
+  padding: 15px;
+  border: 1px solid #0284c7;
+  border-radius: 6px;
+}
+
+.article-title {
+  color: #0369a1;
+  margin-bottom: 15px;
+}
+
+.anime-card {
+  background-color: #ffffff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 12px;
+  display: flex; /* Menyusun gambar di kiri & teks di kanan */
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Mengunci ukuran gambar agar tidak meloncat/ketinggian */
+.anime-img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0; /* Mencegah gambar tersipitkan */
+}
+
+.anime-info {
+  padding-top: 0;
+}
+
+.anime-info h3 {
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.anime-info p {
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.4;
+}
+
+/* Tag Aside (Warna 4) */
+aside {
+  background-color: #fef3c7;
+  padding: 15px;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+}
+
+aside h3 {
+  color: #b45309;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f59e0b;
+  padding-bottom: 5px;
+}
+
+.top-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.top-list li {
+  font-size: 0.8rem;
+  padding: 6px 0;
+  border-bottom: 1px dashed #fde68a;
+  color: #78350f;
+}
+
+/* 4. Footer (Warna 5) */
+footer {
+  background-color: #475569;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background-color: #f3f4ed;
+}
+
+/* Header */
+header {
+  background-color: #2c5252;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Navigasi (Flexbox: Logo Kiri, Menu Kanan) */
+nav {
+  background-color: #137a87;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  display: flex;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  display: flex;
+  color: #f1c40f;
+}
+
+/* Section Utama (CSS Grid: Article & Aside) */
+main {
+  padding: 20px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+article {
+  background-color: #d9e8e3;
+  padding: 20px;
+  border: 1px solid #9bb8ac;
+  border-radius: 5px;
+}
+
+aside {
+  background-color: #fdf8e2;
+  padding: 20px;
+  border: 1px solid #e6dbad;
+  border-radius: 5px;
+}
+
+/* Table styling di dalam artikel/aside */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1abc9c;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #7f8c8d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 20px;
+}
+
+/* Container Utama */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #38bdf8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+  background-color: #1e293b;
+}
+
+/* 1. Header (Warna 1) */
+header {
+  background: linear-gradient(135deg, #0284c7, #8b5cf6);
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* 2. Navigasi Flexbox (Warna 2) */
+nav {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #38bdf8;
+}
+
+/* 3. Section (CSS Grid) */
+section.main-content {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 20px;
+  padding: 25px;
+  background-color: #1e293b;
+}
+
+/* Tag Article (Warna 3) */
+article {
+  background-color: #0f172a;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+.article-title {
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Grid Galeri Gambar di dalam Article */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.gallery-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px; /* Tambah sedikit tingginya agar lebih proporsional */
+  object-fit: contain; /* Menampilkan seluruh gambar tanpa memotong */
+  background-color: #0f172a; /* Warna latar belakang jika ada ruang kosong */
+  display: block;
+}
+
+.gallery-info {
+  padding: 10px;
+}
+
+.gallery-info h4 {
+  font-size: 0.9rem;
+  color: #f8fafc;
+  margin-bottom: 4px;
+}
+
+.gallery-info p {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Tag Aside (Warna 4) */
+aside {
+  background-color: #0f172a;
+  padding: 20px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+aside h3 {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f59e0b;
+  padding-bottom: 5px;
+}
+
+.category-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.category-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.category-list span.count {
+  background-color: #334155;
+  color: #38bdf8;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.stat-box {
+  background-color: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px dashed #38bdf8;
+  text-align: center;
+}
+
+.stat-box h4 {
+  color: #38bdf8;
+  font-size: 1.2rem;
+}
+
+.stat-box p {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* 4. Footer (Warna 5) */
+footer {
+  background-color: #0f172a;
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  border-top: 1px solid #334155;
+}
