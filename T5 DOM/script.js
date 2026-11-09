@@ -97,7 +97,7 @@ function tambahKeKeranjang(idProduk) {
   // Cari data produk berdasarkan id
   const produkDipilih = produkList.find((p) => p.id === idProduk);
 
-  // Syarat Modul 4: Gunakan alert() jika stok produk habis
+  // Gunakan alert() jika stok produk habis
   if (produkDipilih.stok <= 0) {
     alert("Stok produk habis!");
     return;
