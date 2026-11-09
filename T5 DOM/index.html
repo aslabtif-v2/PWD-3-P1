@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Re:Zero Merchant Store</title>
+    <!-- Font Google Anime Style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- File CSS Tema Re:Zero -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-banner">
+      <h1>Roswaal Mansion Store</h1>
+      <p>Re:Zero Starting Life in Another World Merchant</p>
+    </header>
+
+    <main class="main-container">
+      <!-- Kolom Kiri: Daftar Produk -->
+      <section class="section-box">
+        <h2>Daftar Produk Market</h2>
+        <div id="daftar-produk"></div>
+      </section>
+
+      <!-- Kolom Kanan: Keranjang Belanja -->
+      <section class="section-box cart-box">
+        <h2>Keranjang Belanja</h2>
+        <ul id="keranjang"></ul>
+
+        <div class="cart-summary">
+          <p>Jumlah Item: <span id="jumlah-item">0</span></p>
+          <p>
+            Total Harga: <strong>Rp <span id="total-harga">0</span></strong>
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button id="btn-undo" class="btn-secondary">
+            Return by Death (Undo)
+          </button>
+          <button id="btn-checkout" class="btn-primary">Checkout (Buy)</button>
+        </div>
+
+        <div id="ringkasan-checkout"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
